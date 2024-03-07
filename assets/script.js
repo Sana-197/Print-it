@@ -22,7 +22,7 @@ const bannerText = document.querySelector("#banner p"); // sélection de l'élé
 
 // Fonction pour mettre à jour le Slide//
  function updateSlide(i) {
-	bannerImage.src = `./assets/images/slideshow/${slides[i].image}`;
+	bannerImage.src = `./assets/images/slideshow/` +  slides[i].image;
 	bannerText.innerHTML = slides[i].tagLine;
 }
 
@@ -83,7 +83,7 @@ const bannerText = document.querySelector("#banner p"); // sélection de l'élé
 			dot.classList.add('dot_selected'); // on lui ajoute la classe dot_selected//
 		}
 		else { // sinon //
-			dot.classList.remove('dot_selected'); // on lui retire la classe //
+			dot.classList.remove('dot_selected'); // on lui retire la classe 
 		}
 	}
 
